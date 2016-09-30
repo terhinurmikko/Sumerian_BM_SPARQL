@@ -1,0 +1,15 @@
+PREFIX ecrm: <http://erlangen-crm.org/current/>
+
+SELECT DISTINCT ?fusrodah WHERE {
+{ ?fusrodah ecrm:P72_has_language <http://collection.britishmuseum.org/id/thesauri/language/sumerian> }
+UNION { ?fusrodah ecrm:P72_has_language <http://collection.britishmuseum.org/id/thesauri/language/akkadian-and-sumerian> }
+UNION { ?fusrodah ecrm:P72_has_language <http://collection.britishmuseum.org/id/thesauri/language/old-akkadian-sumerian> }
+UNION { ?fusrodah ecrm:P72_has_language <http://collection.britishmuseum.org/id/thesauri/language/imitation-sumerian> }
+UNION { ?fusrodah ecrm:P72_has_language <http://collection.britishmuseum.org/id/thesauri/language/sumerian-akkadian> }
+UNION { ?fusrodah ecrm:P72_has_language <http://collection.britishmuseum.org/id/thesauri/language/emesal> }
+UNION { ?fusrodah ecrm:P72_has_language <http://collection.britishmuseum.org/id/thesauri/language/bilingual-sumerian-and-akkadian> }
+UNION { ?fusrodah ecrm:P72_has_language <http://collection.britishmuseum.org/id/thesauri/language/phonetic-sumerian> }
+UNION { ?fusrodah ecrm:P72_has_language <http://collection.britishmuseum.org/id/thesauri/language/sumerian-or-akkadian> }
+UNION { ?fusrodah ecrm:P72_has_language <http://collection.britishmuseum.org/id/thesauri/language/sumero-akkadian> }
+UNION { ?fusrodah ecrm:P72_has_language <http://collection.britishmuseum.org/id/thesauri/language/bilingual:-sumerian-akkadian> }
+}
